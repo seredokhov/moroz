@@ -14,7 +14,13 @@ $(function() {
 	buttons.click(function(){
 		var height = $(".carousel").outerHeight(true);
 		buttons.css({'bottom' : height/2, 'transform' : 'translatey(50%)'});
-	})
+	});
+	$(window).resize(function(){
+		var a = $(".carousel").outerHeight(true);
+		alert(a);
+		buttons.css({'bottom' : a/2, 'transform' : 'translatey(50%)'});
+	});
+
 });
 $(function() {
 	var lang = $('.lang_block').find('span');
