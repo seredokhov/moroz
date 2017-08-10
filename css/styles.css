@@ -916,7 +916,7 @@ footer {
 		left: auto !important;
 	}
 	header {
-		position: static;
+		position: relative;
 	}
 	body {
 		margin-top: 0;
