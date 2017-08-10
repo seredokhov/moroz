@@ -17,7 +17,6 @@ $(function() {
 	});
 	$(window).resize(function(){
 		var a = $(".carousel").outerHeight(true);
-		alert(a);
 		buttons.css({'bottom' : a/2, 'transform' : 'translatey(50%)'});
 	});
 
@@ -97,4 +96,23 @@ $(function() {
 	});
 });
 
+/*   Плавный переход   */
+$(function(){
+	$('.music_link').on('click', function(e){
+		$('html,body').stop().animate({ scrollTop: $('#music').offset().top - 50 }, 1000);
+		e.preventDefault();
+	});
+	$('.photo_link').on('click', function(e){
+		$('html,body').stop().animate({ scrollTop: $('#photo').offset().top - 50 }, 1000);
+		e.preventDefault();
+	});
+	$('.video_link').on('click', function(e){
+		$('html,body').stop().animate({ scrollTop: $('#video').offset().top - 50 }, 1000);
+		e.preventDefault();
+	});
+	$('.contacts_link').on('click', function(e){
+		$('html,body').stop().animate({ scrollTop: $('#contacts').offset().top - 50 }, 1000);
+		e.preventDefault();
+	});
+});
 

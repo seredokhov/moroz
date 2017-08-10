@@ -44,6 +44,7 @@ body{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-moz-user-select: none;
+	margin-top: 41px
 }
 a:focus,
 a:active,
@@ -54,6 +55,11 @@ header {
 	min-height: 40px;
 	background: #000;
 	position: relative;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
 }
 header .container {
 	padding: 0;
@@ -663,7 +669,7 @@ p.bio {
 	padding-bottom: 52%;
 	padding-top: 25px;
 	height: 0;
-	margin: 10px 0;
+	margin-top: 10px;
 }
 #video .video iframe {
 	position: absolute;
@@ -674,7 +680,7 @@ p.bio {
 }
 
 #contacts {
-	margin-top: 40px;
+	margin-top: 0px;
 	overflow: hidden;
 }
 .contacts_info h3 {
@@ -908,6 +914,12 @@ footer {
 	}
 	.social_links .drop li:before {
 		left: auto !important;
+	}
+	header {
+		position: static;
+	}
+	body {
+		margin-top: 0;
 	}
 }
 @media (max-width: 992px) {
