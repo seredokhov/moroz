@@ -984,8 +984,9 @@ footer {
 		margin-left: 0;
 	}
 	.nav-links a {
-		width: 40%;
+		width: 49%;
 		margin: 0;
+		line-height: 40px;
 	}
 	.owl-buttons > div {
 		background-size: 80px !important;

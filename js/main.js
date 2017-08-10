@@ -15,17 +15,7 @@ $(function() {
 		var height = $(".carousel").outerHeight(true);
 		buttons.css({'bottom' : height/2, 'transform' : 'translatey(50%)'});
 	})
-});/*
-$(function() {
-	var link = $(".social_links").find('div');
-	link.mouseenter(function(){
-		$(this).find('.drop').css('display', 'block');
-	})
-	link.find('div').mouseleave(function(){
-		$(this).find('.drop').css('display', 'none');
-	});
 });
-*/
 $(function() {
 	var lang = $('.lang_block').find('span');
 	lang.click(function(){
