@@ -197,6 +197,7 @@ header .container {
 			font-size: 14px;
 			display: block;
 			margin-bottom: 7px;
+			font-family: 'Proxima Nova Light';
 
 		}
 		header .line {
@@ -644,8 +645,8 @@ p.bio {
 	display: inline-block;
 	width: 46px;
 	height: 47px;
-	background-color: none;
-	background: url('../images/zoom.png') no-repeat;
+	background-color: transparent;
+	background: url('../images/zoom.png') no-repeat ;
 	top: 50%;
 	left:50%;
 	transform: translate(-50%, -50%);
@@ -677,11 +678,11 @@ p.bio {
 	overflow: hidden;
 }
 .contacts_info h3 {
-	margin: 0 0 25px; 5px;
+	margin: 0 0 25px;
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #000000;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans';
 }
 .contacts_info .mail,
 .contacts_info .phone,
@@ -914,7 +915,7 @@ footer {
 		height: 36px;
 	}
 	.owl-buttons > div.owl-next {
-		background-position-x: -122px !important;
+		background-position: -122px 0 !important;
 	}
 }
 @media (max-width: 480px) {
@@ -924,7 +925,7 @@ footer {
 }
 @media (max-width: 400px) {
 	header .bar {
-		2idth: 150px;
+		width: 150px;
 	}
 }
 
