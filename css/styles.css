@@ -115,10 +115,10 @@ header .container {
 			display: inline-block;
 			position: absolute;
 			top: 50%;
-			left: 10px;
+			left: 11px;
 			transform: translateY(-50%);
 			line-height: normal;
-			border: 5px solid #000000;
+			border: 4px solid #000000;
 		}
 		header .prev,
 		header .next {
@@ -346,7 +346,7 @@ header .container {
 }
 .owl-pagination {
 	position: absolute;
-	bottom: 5px;
+	bottom: 10px;
 	left: 50%;
 	transform: translateX(-50%);
 }
