@@ -234,7 +234,7 @@ header .container {
 		}
 		.social_links {
 			float: right;
-			height: 38px;
+			min-height: 38px;
 			padding-top: 8px;
 			margin: 0 -6px;
 			cursor: pointer;
@@ -1026,5 +1026,8 @@ footer {
 		padding: 0;
 		width: 100%;
 		text-align: center;
+	}
+	header .social_links > div {
+		margin: 0;
 	}
 }
