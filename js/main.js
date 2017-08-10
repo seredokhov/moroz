@@ -16,13 +16,8 @@ $(function() {
 		buttons.css({'bottom' : height/2, 'transform' : 'translatey(50%)'});
 	});
 	$(window).resize(function(){
-<<<<<<< HEAD
-		var a = $(".carousel").outerHeight(true);
-		buttons.css({'bottom' : a/2, 'transform' : 'translatey(50%)'});
-=======
 		var height = $(".carousel").outerHeight(true);
 		buttons.css({'bottom' : height/2, 'transform' : 'translatey(50%)'});
->>>>>>> origin/master
 	});
 
 });
