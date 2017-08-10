@@ -95,7 +95,7 @@ header .container {
 			margin: 0;
 		}
 	.header_media {
-		ьшт-height: 40px;
+		min-height: 40px;
 		float: left;
 		line-height: 40px;
 	}
