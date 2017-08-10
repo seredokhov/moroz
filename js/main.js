@@ -17,7 +17,6 @@ $(function() {
 	});
 	$(window).resize(function(){
 		var a = $(".carousel").outerHeight(true);
-		alert(a);
 		buttons.css({'bottom' : a/2, 'transform' : 'translatey(50%)'});
 	});
 
