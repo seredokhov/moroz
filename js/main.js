@@ -30,7 +30,7 @@ $(function() {
 	var line = song.find('.song_state');
 	play.click(function(){
 		song.removeClass('changed');
-		line.css('width', 0);
+		play.not(this).parent().parent('.song').find('.song_state').css('width', 0);
 		$(this).parent().parent('.song').toggleClass('changed');
 	})
 });
