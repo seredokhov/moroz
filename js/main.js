@@ -66,4 +66,39 @@ $(function() {
 });
 
 
+$(function() { // Ждём загрузки страницы
+
+	$(".photo_item > div").click(function(){	// Событие клика на маленькое изображение
+	  	var img = $(this).find('img');	// Получаем изображение, на которое кликнули
+		var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+		$("body").append("<div class='popup'>"+ //Добавляем в тело документа разметку всплывающего окна
+						 "<div class='popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
+						 "<img src='"+src+"' class='popup_img' />"+
+						 "<div class='close_popup'>╳</div>"+ // Само увеличенное фото
+						 "</div>"); 
+		$(".popup").fadeIn(200); // Медленно выводим изображение
+		$(".popup_bg, .close_popup").click(function(){	// Событие клика на затемненный фон	   
+			$(".popup").fadeOut(200);	// Медленно убираем всплывающее окно
+			setTimeout(function() {	// Выставляем таймер
+			  $(".popup").remove(); // Удаляем разметку всплывающего окна
+			}, 200);
+		});
+		
+	});
+	
+});
+/*  Кнопка вверх  */
+$(function() {
+	$(window).scroll(function() {
+		if($(this).scrollTop() != 0) {
+			$('#totop').fadeIn();
+		} else {
+			$('#totop').fadeOut();
+		}
+	});
+	$('#totop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+	});
+});
+
 
