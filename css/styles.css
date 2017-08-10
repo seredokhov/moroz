@@ -550,18 +550,19 @@ p.bio {
 	border-radius: 50%;
 	box-shadow: none;
 	box-sizing: content-box;
-	width: 55px;
-	height: 55px;
+	width: 60px;
+	height: 60px;
 	background: #ff7835;
 	border: 6px solid #ffffff;
 	-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 	box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
+
 }
 .song.changed .play_button:before {
 	border: 13px solid transparent;
 	border-left: solid 16px #ffffff;
-	left: 21px;
+	left: 25px;
 }
 .play_button {
 	display: inline-block;
