@@ -46,6 +46,11 @@ body{
 	-o-moz-user-select: none;
 	min-width: 380px;
 }
+a:focus,
+a:active,
+a {
+	outline: none !important;
+}
 header {
 	min-height: 40px;
 	background: #000;
@@ -432,6 +437,7 @@ ul.unstyled li a {
 	font-size: 16px;
 	font-family: 'PT Sans', sans-serif;
 	text-transform: uppercase;
+	outline: none;
 }
 ul.unstyled li.active a {
 	color: #ff8f5a;
