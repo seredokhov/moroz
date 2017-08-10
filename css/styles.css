@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext');
 @font-face {
+	font-family: Brassie Regular;
+	src: url('../fonts/brassie_regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/brassie_regular.otf')  format('opentype'),
+		url('../fonts/brassie_regular.woff') format('woff'),
+		url('../fonts/brassie_regular.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
 	font-family: Proxima Nova Regular;
 	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/ProximaNova-Regular.otf')  format('opentype'),
@@ -35,6 +44,7 @@ body{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-moz-user-select: none;
+	min-width: 380px;
 }
 header {
 	min-height: 40px;
@@ -304,6 +314,9 @@ header .container {
 			text-transform: uppercase;
 			color: #ffffff;
 			padding-left: 30px;
+			font-family: 'Brassie Regular';
+			font-weight: lighter;
+			letter-spacing: 0.7px;
 		}
 		.social_links .drop li:before {
 			content: "";
@@ -654,6 +667,7 @@ p.bio {
 
 #contacts {
 	margin-top: 40px;
+	overflow: hidden;
 }
 .contacts_info h3 {
 	margin: 0 0 25px; 5px;
@@ -882,6 +896,18 @@ footer {
 	.song {
 		margin-right: 0;
 		margin-left: 0;
+	}
+	.nav-links a {
+		width: 40%;
+		margin: 0;
+	}
+	.owl-buttons > div {
+		background-size: 80px !important;
+		width: 36px;
+		height: 36px;
+	}
+	.owl-buttons > div.owl-next {
+		background-position-x: -122px !important;
 	}
 }
 @media (max-width: 480px) {
