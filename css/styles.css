@@ -269,36 +269,76 @@ header .container {
 		header .social_links .youtube {
 			background-position: -295px -31px;
 		}
-		header .social_links .itunes:hover {
+
+		/*   Выподающее меню и социальные иконки на больших экранах   */
+		@media (min-width: 1200px) {
+			/*body {
+				display: none;
+			}*/
+			header .social_links .itunes:hover {
+				background-position: 0px 0px;
+			}
+			header .social_links .google_play:hover {
+				background-position: -45px 1px;
+			}
+			header .social_links .facebook:hover {
+				background-position: -95px 1px;
+			}
+			header .social_links .vk:hover {
+				background-position: -145px 1px;
+			}
+			header .social_links .instagram:hover {
+				background-position: -195px 1px;
+			}
+			header .social_links .spotify:hover {
+				background-position: -245px 1px;
+			}
+			header .social_links .youtube:hover {
+				background-position: -295px 1px;
+			}
+
+			/*  Выпадающие меню   */
+			header .social_links .facebook:hover .drop {
+				display: block;
+			}
+			header .social_links .vk:hover .drop{
+				display: block;
+			}
+			/*----*/
+		}
+
+
+		/*   Изменение социальных иконок на маленьких экранах   */
+		header .social_links .itunes.showed {
 			background-position: 0px 0px;
 		}
-		header .social_links .google_play:hover {
+		header .social_links .google_play.showed {
 			background-position: -45px 1px;
-		}
-		header .social_links .facebook:hover {
+		}	
+		header .social_links .facebook.showed {
 			background-position: -95px 1px;
 		}
-		header .social_links .vk:hover {
+		header .social_links .vk.showed {
 			background-position: -145px 1px;
 		}
-		header .social_links .instagram:hover {
+		header .social_links .instagram.showed {
 			background-position: -195px 1px;
 		}
-		header .social_links .spotify:hover {
+		header .social_links .spotify.showed {
 			background-position: -245px 1px;
 		}
-		header .social_links .youtube:hover {
+		header .social_links .youtube.showed {
 			background-position: -295px 1px;
 		}
+		/*  Выпадающее меню социальных иконок на маленьких экранах   */
+		header .social_links .facebook.showed .drop {
+			display: block;
+		}
+		header .social_links .vk.showed .drop {
+			display: block;
+		}
 		
-		/*  Выпадающие меню   */
-		header .social_links .facebook:hover .drop {
-			display: block;
-		}
-		header .social_links .vk:hover .drop{
-			display: block;
-		}
-		/*----*/
+
 
 		.social_links .drop {
 			position: absolute;

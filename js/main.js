@@ -116,3 +116,26 @@ $(function(){
 	});
 });
 
+
+
+$(function(){
+	var target = $('header').find('.social_links').find('div');
+	target.unbind('mouseenter mouseleave');
+});
+
+
+
+if($(document).width() < 1200)  {
+	$(function(){
+
+		var links = $('header').find('.social_links');
+		var link = links.find('div');
+
+		link.click(function(){
+			link.not($(this)).removeClass('showed');
+			$(this).toggleClass('showed');
+		})
+	});
+
+};
+
