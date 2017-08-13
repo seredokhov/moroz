@@ -271,74 +271,183 @@ header .container {
 		}
 
 		/*   Выподающее меню и социальные иконки на больших экранах   */
-		@media (min-width: 1200px) {
-			/*body {
-				display: none;
-			}*/
-			header .social_links .itunes:hover {
-				background-position: 0px 0px;
-			}
-			header .social_links .google_play:hover {
-				background-position: -45px 1px;
-			}
-			header .social_links .facebook:hover {
-				background-position: -95px 1px;
-			}
-			header .social_links .vk:hover {
-				background-position: -145px 1px;
-			}
-			header .social_links .instagram:hover {
-				background-position: -195px 1px;
-			}
-			header .social_links .spotify:hover {
-				background-position: -245px 1px;
-			}
-			header .social_links .youtube:hover {
-				background-position: -295px 1px;
-			}
-
-			/*  Выпадающие меню   */
-			header .social_links .facebook:hover .drop {
-				display: block;
-			}
-			header .social_links .vk:hover .drop{
-				display: block;
-			}
-			/*----*/
-		}
-
-
-		/*   Изменение социальных иконок на маленьких экранах   */
-		header .social_links .itunes.showed {
+		header .social_links .itunes:hover {
 			background-position: 0px 0px;
 		}
-		header .social_links .google_play.showed {
+		header .social_links .google_play:hover {
 			background-position: -45px 1px;
-		}	
-		header .social_links .facebook.showed {
+		}
+		header .social_links .facebook:hover {
 			background-position: -95px 1px;
 		}
-		header .social_links .vk.showed {
+		header .social_links .vk:hover {
 			background-position: -145px 1px;
 		}
-		header .social_links .instagram.showed {
+		header .social_links .instagram:hover {
 			background-position: -195px 1px;
 		}
-		header .social_links .spotify.showed {
+		header .social_links .spotify:hover {
 			background-position: -245px 1px;
 		}
-		header .social_links .youtube.showed {
+		header .social_links .youtube:hover {
 			background-position: -295px 1px;
 		}
-		/*  Выпадающее меню социальных иконок на маленьких экранах   */
-		header .social_links .facebook.showed .drop {
-			display: block;
-		}
-		header .social_links .vk.showed .drop {
-			display: block;
-		}
-		
 
+		/*  Выпадающие меню   */
+		header .social_links .facebook:hover .drop {
+			display: block;
+		}
+		header .social_links .vk:hover .drop{
+			display: block;
+		}
+	/*----*/
+
+
+		/*   Шапка мобильного меню  */
+		.mobile_header {
+			position: relative;
+		}
+
+		.label {
+			font-size: 20px;
+			text-transform: uppercase;
+			display: inline-block;
+			text-align: left;
+			padding: 10px;
+			float: left;
+		}
+
+		.like,
+		.hamb,
+		.lang_flags {
+			float: right;
+		}
+
+
+		.lang_flags {
+			padding: 10px 5px;
+		}
+
+		.like {
+			height: 21px;
+			overflow: hidden;
+			margin: 9px 10px 0 10px;
+		}
+
+		.lang_flags span {
+			display: inline-block;
+			width: 30px;
+			height: 20px;
+			background: red;
+		}
+
+
+		.mobile_header .social-likes {
+			padding: 0;
+			width: auto;
+		}
+
+		/*  Иконка гамбургер  */
+
+		.hamb {
+			width: 40px;
+			margin-top: 10px;
+			height: 20px;
+			position: relative;
+			z-index: 999;
+		}
+		.hamb span,
+		.hamb span:before,
+		.hamb span:after {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -1px;
+			margin-left: -13px;
+			display: inline-block;
+			width: 26px;
+			height: 2px;
+			background: #fff;
+		}
+		.hamb span:before {
+			content: "";
+			margin-top: -8px;
+			transition: all 0.2s;
+		}
+		.hamb span:after {
+			content: "";
+			margin-top: 6px;
+			transition: all 0.2s;
+		}
+
+		/*  Открытое положение  */
+		.hamb.open span {
+			background-color: transparent;
+		}
+		.hamb.open span:before {
+			transform: rotate(45deg);
+			margin-top: 0;
+		}
+		.hamb.open span:after {
+			transform: rotate(-45deg);
+			margin-top: 0;
+		}
+
+		/*  Выдвигающееся меню  */
+		#wrapper {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0,0,0, 0.7);
+			z-index: 9;
+			display: none;
+		}
+		#slide_menu {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 0;
+			min-height: 500px;
+			background: rgba(0,0,0, 0.9);
+			overflow: hidden;
+			transition: all 0.2s;
+			padding-top: 40px;
+			z-index: 10;
+		}
+		#slide_menu.open {
+			width: 400px;
+		}
+		#slide_menu a {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			color: #fff;
+			font-family: 'Pt Sans';
+			font-size: 18px;
+			text-decoration: none;
+			transition: all 0.1s;
+		}
+		#slide_menu a:hover {
+			background: #ffffff;
+			color: #000000;
+		}
+		#slide_menu .artists a{
+			padding-left: 25px;
+		}
+
+
+
+
+
+
+
+
+
+
+
+		/*     */
 
 		.social_links .drop {
 			position: absolute;

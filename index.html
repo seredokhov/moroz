@@ -32,7 +32,7 @@
 
 <body>
 	<header>
-		<div class="container">
+		<div class="container visible-lg">
 			<div class="lang_block">
 				<span class="ru change">rus</span>
 				<span class="eng">eng</span>
@@ -82,6 +82,44 @@
 				<div class="youtube"></div>
 			</div>
 		</div>
+		<div class="container mobile_header hidden-lg">
+			<div class="">
+				<div class="label">Мороз шоу</div>
+				<div class="hamb">
+					<span></span>
+				</div>
+				<div class="like">
+					<div class="social-likes" data-counters="no">
+						<div class="facebook" title="Поделиться ссылкой на Фейсбуке">Like Page</div>
+					</div>
+				</div>
+				<div class="lang_flags">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+				</div>
+				<div id="wrapper"></div>
+			</div>
+		</div>
+		<div id="slide_menu" class="hidden-lg">
+			<a href="#about">Об ансамбле</a>
+			<div class="artists">
+				<a href="#tablist">Галина Николаева</a>
+				<a href="#tablist">Анна Бойко</a>
+				<a href="#tablist">Алина Миронова</a>
+			</div>
+			<a href="#music">Аудио</a>
+			<a href="#photo">Фото</a>
+			<a href="#video">Видео</a>
+			<a href="#contacts">Контакты</a>
+			<a href="#">Itunes</a>
+			<a href="#">GooglePlay</a>
+			<a href="#">Facebook</a>
+			<a href="#">Вконтакте</a>
+			<a href="#">Instagram</a>
+			<a href="#">Spotify</a>
+			<a href="#">Youtube</a>
+		</div>
 	</header>
 	<div class="carousel">
 		<div id="owl-demo" class="owl-carousel owl-theme">
@@ -95,7 +133,7 @@
 			<div class="container">
 				<span class="action_name">Мороз Шоу</span>
 				<div class="nav-links">
-					<a href="#photo" class="music_link">Музыка</a>
+					<a href="#music" class="music_link">Музыка</a>
 					<a href="#photo" class="photo_link">Фото</a>
 					<a href="#video" class="video_link">Видео</a>
 					<a href="#contacts" class="contacts_link">Контакты</a>
@@ -103,12 +141,12 @@
 			</div>
 		</div>
 		<div class="container">
-			<ul class="unstyled" role="tablist">
+			<ul class="unstyled" role="tablist" id="tablist">
 				<li class="active"><a href="#person-1" data-toggle="tab">Галина Николаева</a></li>
 				<li><a href="#person-2" data-toggle="tab">Анна Бойко</a></li>
 				<li><a href="#person-3" data-toggle="tab">Алина Миронова</a></li>
 			</ul>
-			<div class="tab-content">
+			<div class="tab-content" id="tab-content">
 				<div role="tabpanel" class="tab-pane active fade in" id="person-1">
 					<div class="row">
 						<div class="col-md-3">
@@ -146,7 +184,7 @@
 					</div>
 				</div>
 			</div>
-			<section class="about">
+			<section id="about">
 				<div class="about_header">
 					<h1>Об ансамбле</h1>
 				</div>
@@ -427,8 +465,6 @@
 	<footer>
 		© МОРОЗ ШОУ  2017 | ВСЕ ПРАВА ЗАЩИЩЕНЫ
 	</footer>
-
-
 	<div id="totop"></div>
 
 	<!-- Bootstrap и другие JavaScript

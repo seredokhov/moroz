@@ -116,26 +116,50 @@ $(function(){
 	});
 });
 
-
+/*   Мобильное меню  */
 
 $(function(){
-	var target = $('header').find('.social_links').find('div');
-	target.unbind('mouseenter mouseleave');
+	var button = $('.hamb');
+	var wrapper = $('#wrapper');
+	var menu = $('#slide_menu');
+	var link = $('#slide_menu').find('a');
+	button.click(function(){
+		$(this).toggleClass('open');
+		menu.toggleClass('open');
+		if($(this).hasClass('open')) {
+			wrapper.show();
+		}
+		else {
+			wrapper.hide();
+		}
+	})
+	wrapper.click(function(){
+		$(this).hide();
+		menu.removeClass('open');
+		button.removeClass('open');
+	})
+	link.click(function(){
+		wrapper.hide();
+		menu.removeClass('open');
+		button.removeClass('open');
+	})
+});
+
+/*   Анкорные ссылки на артистов    */
+
+$(function(){
+	var person = $('#slide_menu').find('.artists').find('a');
+	var links = $('#tablist').find('li');
+	var tabs = $('#tab-content');
+	person.click(function(){
+		var index = $(this).index();
+		links.removeClass('active');
+		$('#tablist').find('li:eq(' + index + ')').addClass('active');
+		tabs.children().removeClass('active in');
+		tabs.children('div:eq(' + index + ')').addClass('active in');
+	})
+
 });
 
 
-
-if($(document).width() < 1200)  {
-	$(function(){
-
-		var links = $('header').find('.social_links');
-		var link = links.find('div');
-
-		link.click(function(){
-			link.not($(this)).removeClass('showed');
-			$(this).toggleClass('showed');
-		})
-	});
-
-};
 
