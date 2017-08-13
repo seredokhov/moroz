@@ -417,7 +417,7 @@ header .container {
 			z-index: 10;
 		}
 		#slide_menu.open {
-			width: 400px;
+			width: 300px;
 		}
 		#slide_menu a {
 			display: block;
@@ -428,13 +428,14 @@ header .container {
 			font-size: 18px;
 			text-decoration: none;
 			transition: all 0.1s;
+			padding-left: 20px;
 		}
 		#slide_menu a:hover {
 			background: #ffffff;
 			color: #000000;
 		}
 		#slide_menu .artists a{
-			padding-left: 25px;
+			padding-left: 35px;
 		}
 
 
