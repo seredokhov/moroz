@@ -417,7 +417,7 @@ header .container {
 			z-index: 10;
 		}
 		#slide_menu.open {
-			width: 300px;
+			width: 250px;
 		}
 		#slide_menu a {
 			display: block;
