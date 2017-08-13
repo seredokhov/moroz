@@ -409,6 +409,7 @@ header .container {
 			top: 0;
 			right: 0;
 			width: 0;
+			white-space: nowrap;
 			min-height: 500px;
 			background: rgba(0,0,0, 0.9);
 			overflow: hidden;
