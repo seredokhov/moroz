@@ -406,7 +406,7 @@ header .container {
 		}
 		#slide_menu {
 			position: absolute;
-			top: 0;
+			top: 0;			
 			right: 0;
 			width: 0;
 			white-space: nowrap;
@@ -438,16 +438,6 @@ header .container {
 		#slide_menu .artists a{
 			padding-left: 35px;
 		}
-
-
-
-
-
-
-
-
-
-
 
 		/*     */
 
