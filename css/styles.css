@@ -44,7 +44,8 @@ body{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-moz-user-select: none;
-	margin-top: 41px
+	margin-top: 41px;
+	min-width: 300px;
 }
 a:focus,
 a:active,
@@ -336,15 +337,27 @@ header .container {
 
 		.lang_flags span {
 			display: inline-block;
-			width: 30px;
-			height: 20px;
-			background: red;
+			width: 31px;
+			height: 19px;
+			margin:  0 3px;
+			position: relative;
+			top: 1px;
+			background: url('../images/flag.png') no-repeat green;
+			cursor: pointer;
 		}
-
-
+		.lang_flags span.eng {
+			background-position: -41px 0;
+		}
+		.lang_flags span.ch {
+			background-position: -82px 0;
+		}
 		.mobile_header .social-likes {
 			padding: 0;
 			width: auto;
+		}
+		.lang_flags span.changed {
+			outline: 1px solid #ffffff;
+
 		}
 
 		/*  Иконка гамбургер  */
@@ -437,16 +450,6 @@ header .container {
 		#slide_menu .artists a{
 			padding-left: 35px;
 		}
-
-
-
-
-
-
-
-
-
-
 
 		/*     */
 
@@ -1145,6 +1148,9 @@ footer {
 		margin-right: 0;
 		margin-left: 0;
 	}
+	.nav-links {
+		display: none;
+	}
 	.nav-links a {
 		width: 49%;
 		margin: 0;
@@ -1179,5 +1185,12 @@ footer {
 	}
 	header .social_links > div {
 		margin: 0;
+	}
+}
+
+@media (max-width: 339px) {
+	.like {
+		position: relative;
+		top: 10px;
 	}
 }

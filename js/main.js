@@ -158,8 +158,17 @@ $(function(){
 		tabs.children().removeClass('active in');
 		tabs.children('div:eq(' + index + ')').addClass('active in');
 	})
-
 });
 
 
+/*   Переключение языка (флаги)   */
+
+$(function(){
+	var flag = $('.lang_flags').find('span');
+	flag.click(function(){
+		flag.removeClass('changed');
+		$(this).addClass('changed');
+	})
+
+});
 
