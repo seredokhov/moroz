@@ -357,11 +357,7 @@ header .container {
 			padding: 0;
 			width: auto;
 		}
-		.lang_flags span.changed {
-			outline: 1px solid #ffffff;
-
-		}
-
+		
 		/*  Иконка гамбургер  */
 
 		.hamb {
