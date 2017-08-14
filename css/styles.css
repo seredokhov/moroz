@@ -342,7 +342,7 @@ header .container {
 			margin:  0 3px;
 			position: relative;
 			top: 1px;
-			background: url('../images/flag.png') no-repeat green;
+			background: url('../images/flag.png') no-repeat transparent;
 			cursor: pointer;
 		}
 		.lang_flags span.eng {
@@ -584,7 +584,7 @@ ul.unstyled {
 	list-style: none;
 	padding: 0;
 	overflow: hidden;
-	margin: 35px 0 26px;
+	margin: 15px 0 15px;
 
 }
 ul.unstyled li {
@@ -660,7 +660,7 @@ p.bio {
 	margin-top: 37px;
 }
 .song {
-	margin-bottom: 24px;
+	margin-bottom: 10px;
 }
 .song > div.col-md-1 {
 	padding: 0;
@@ -1149,7 +1149,8 @@ footer {
 		margin-right: 0;
 		margin-left: 0;
 	}
-	.nav-links {
+	.nav-links,
+	.orange_block {
 		display: none;
 	}
 	.nav-links a {
@@ -1188,13 +1189,9 @@ footer {
 		margin: 0;
 	}
 }
-<<<<<<< HEAD
-
 @media (max-width: 339px) {
 	.like {
 		position: relative;
 		top: 10px;
 	}
 }
-=======
->>>>>>> origin/master
