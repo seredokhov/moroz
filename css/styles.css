@@ -305,12 +305,10 @@ header .container {
 		}
 	/*----*/
 
-
 		/*   Шапка мобильного меню  */
 		.mobile_header {
 			position: relative;
 		}
-
 		.label {
 			font-size: 20px;
 			text-transform: uppercase;
@@ -319,24 +317,19 @@ header .container {
 			padding: 10px;
 			float: left;
 		}
-
 		.like,
 		.hamb,
 		.lang_flags {
 			float: right;
 		}
-
-
 		.lang_flags {
 			padding: 10px 5px;
 		}
-
 		.like {
 			height: 21px;
 			overflow: hidden;
 			margin: 9px 10px 0 10px;
 		}
-
 		.lang_flags span {
 			display: inline-block;
 			width: 31px;
@@ -357,7 +350,7 @@ header .container {
 			padding: 0;
 			width: auto;
 		}
-		
+
 		/*  Иконка гамбургер  */
 
 		.hamb {
@@ -565,7 +558,6 @@ main > .container {
 	line-height: 65px;
 	font-family: 'PT Sans', sans-serif;
 }
-
 .action_name {
 	float: left;
 }
@@ -583,7 +575,6 @@ ul.unstyled {
 	padding: 0;
 	overflow: hidden;
 	margin: 30px 0 30px;
-
 }
 ul.unstyled li {
 	float: left;
@@ -916,7 +907,6 @@ p.bio {
 img.logo {
 	margin-top: 25px;
 }
-
 .social_icons > div {
 	display: inline-block;
 	width: 38px;
@@ -950,7 +940,6 @@ img.logo {
 .social_icons .youtube {
 	background-position: -295px -63px;
 }
-
 footer {
 	height: 44px;
 	background: #d5d4d2;
@@ -962,9 +951,7 @@ footer {
 	font-weight: bold;
 }
 
-
 /*  Модальное окно  */
-
 
 .popup {
 	position: fixed;
@@ -1025,10 +1012,6 @@ footer {
 	opacity: 1;
 }
 
-
-
-
-
 @media (max-width: 1200px) {
 	.lang_block {
 		width: 50%;
@@ -1052,7 +1035,6 @@ footer {
 		left: -80%;
 		text-align: left;
 	}
-
 	header .social_links div {
 		position: static;
 	}
