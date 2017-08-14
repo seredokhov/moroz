@@ -419,9 +419,10 @@ header .container {
 		}
 		#slide_menu {
 			position: absolute;
-			top: 0;
+			top: 0;			
 			right: 0;
 			width: 0;
+			white-space: nowrap;
 			min-height: 500px;
 			background: rgba(0,0,0, 0.9);
 			overflow: hidden;
@@ -1187,6 +1188,7 @@ footer {
 		margin: 0;
 	}
 }
+<<<<<<< HEAD
 
 @media (max-width: 339px) {
 	.like {
@@ -1194,3 +1196,5 @@ footer {
 		top: 10px;
 	}
 }
+=======
+>>>>>>> origin/master
