@@ -162,7 +162,7 @@ $(function(){
 
 
 /*   Переключение языка (флаги)   */
-
+/*
 $(function(){
 	var flag = $('.lang_flags').find('span');
 	flag.click(function(){
@@ -170,5 +170,5 @@ $(function(){
 		$(this).addClass('changed');
 	})
 
-});
+});*/
 

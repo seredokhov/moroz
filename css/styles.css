@@ -205,6 +205,8 @@ header .container {
 			display: block;
 			margin-bottom: 7px;
 			font-family: 'Proxima Nova Light';
+			white-space: nowrap;
+			overflow: hidden;
 
 		}
 		header .line {
@@ -584,7 +586,7 @@ ul.unstyled {
 	list-style: none;
 	padding: 0;
 	overflow: hidden;
-	margin: 15px 0 15px;
+	margin: 30px 0 30px;
 
 }
 ul.unstyled li {
@@ -632,7 +634,7 @@ p.bio {
 	background: #ff7835;
 	border-radius: 15px;
 	height: 30px;
-	margin: 30px 0 29px;
+	margin: 30px 0 30px;
 }
 .about_header h1,
 .music_header h1,
@@ -654,7 +656,7 @@ p.bio {
 	margin: 12px 0 -11px;
 }
 #music {
-	margin-bottom: 43px;
+	margin-bottom: 0px;
 }
 .music_header {
 	margin-top: 37px;
