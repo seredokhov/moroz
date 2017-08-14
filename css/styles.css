@@ -242,6 +242,7 @@ header .container {
 			margin: 0 -6px;
 			cursor: pointer;
 		}
+		header .social_links > a,
 		header .social_links > div {
 			display: inline-block;
 			width: 38px;
@@ -907,7 +908,7 @@ p.bio {
 img.logo {
 	margin-top: 25px;
 }
-.social_icons > div {
+.social_icons > a {
 	display: inline-block;
 	width: 38px;
 	margin: 0 4px;
