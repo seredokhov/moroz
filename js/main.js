@@ -1,3 +1,4 @@
+// ОВЛ карусель
 $(function() {
 	$("#owl-demo").owlCarousel({	
 		navigation : true, // Show next and prev buttons
@@ -7,6 +8,9 @@ $(function() {
 		singleItem:true	
 	});
 });
+
+// Автоматическое выравнивание кнопок назад/вперед 
+// при ресайзе и загрузке страницы
 $(function() {
 	var height = $(".carousel").outerHeight(true);
 	var buttons = $('.owl-prev, .owl-next' );
@@ -22,7 +26,7 @@ $(function() {
 
 });
 
-/*   Базовый функционал плеера в шапке   */
+// Базовый функционал плеера в шапке
 $(function() {
 	var player = $('.header_media');
 	var tumbler = player.find('.tumbler');
@@ -41,7 +45,7 @@ $(function() {
 	});
 });
 
-/*   Плееры в блоке "Музыка"   */
+// Плееры в блоке "Музыка"
 $(function() {
 	var play = $('.play_button');
 	var song = play.parent().parent('.song');
@@ -53,7 +57,7 @@ $(function() {
 	})
 });
 
-/*  Галлерея  */
+// Галлерея
 $(function() {
 	$(".photo_item > div").click(function(){
 		var img = $(this).find('img');
@@ -72,7 +76,7 @@ $(function() {
 		});
 	});
 });
-/*  Кнопка вверх  */
+// Кнопка вверх 
 $(function() {
 	$(window).scroll(function() {
 		if($(this).scrollTop() != 0) {
@@ -86,7 +90,7 @@ $(function() {
 	});
 });
 
-/*   Плавный переход   */
+// Плавный переход
 $(function(){
 	$('.music_link').on('click', function(e){
 		$('html,body').stop().animate({ scrollTop: $('#music').offset().top - 50 }, 1000);
@@ -106,7 +110,7 @@ $(function(){
 	});
 });
 
-/*   Мобильное меню  */
+// Мобильное меню
 
 $(function(){
 	var button = $('.hamb');
@@ -149,7 +153,7 @@ $(function(){
 	})
 });
 
-/*   Анкорные ссылки на артистов    */
+// Анкорные ссылки на артистов
 $(function(){
 	var person = $('#slide_menu').find('.artists').find('a');
 	var tablist = $('#tablist');
@@ -161,21 +165,25 @@ $(function(){
 		tablist.css('display', 'block');
 		var index = $(this).index();
 		links.removeClass('active');
-		$('#tablist').find('li:eq(' + index + ')').addClass('active');
+		tablist.find('li:eq(' + index + ')').addClass('active');
 		tabs.children().removeClass('active in');
 		tabs.children('div:eq(' + index + ')').addClass('active in');
 	})
+	// скрытие табов по клику на название шоу
 	reset.click(function(){
 		links.removeClass('active');
 		tabs.children().removeClass('active in');
+		tablist.css('display', 'none');
 	})
+	// скрытие табов по клику на пункт мобильного меню
 	about.click(function(){
 		links.removeClass('active');
 		tabs.children().removeClass('active in');
+		tablist.css('display', 'none');
 	})
 });
 
-/*   Переключение языка (флаги)   */
+// Переключение языка (флаги)
 $(function(){
 	var flag = $('.lang_flags').find('span');
 	flag.click(function(){
@@ -183,12 +191,3 @@ $(function(){
 		$(this).addClass('changed');
 	})
 });
-
-$(function() {
-	var lang = $('.lang_block').find('span');
-	lang.click(function(){
-		lang.removeClass('changed');
-		$(this).toggleClass('changed');
-	})
-});
-
