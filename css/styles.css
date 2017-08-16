@@ -331,7 +331,7 @@ header .social_links .vk:hover .drop{
 	float: right;
 }
 .lang_flags {
-	padding: 10px 5px;
+	padding: 10px 5px 0px 5px;
 }
 .like {
 	height: 21px;
@@ -353,6 +353,9 @@ header .social_links .vk:hover .drop{
 }
 .lang_flags span.ch {
 	background-position: -82px 0;
+}
+.mobile_header {
+	min-height: 41px;
 }
 .mobile_header .social-likes {
 	padding: 0;
