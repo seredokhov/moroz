@@ -173,7 +173,6 @@ $(function(){
 	reset.click(function(){
 		links.removeClass('active');
 		tabs.children().removeClass('active in');
-		tablist.css('display', 'none');
 	})
 	// скрытие табов по клику на пункт мобильного меню
 	about.click(function(){
