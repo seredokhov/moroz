@@ -113,6 +113,11 @@ $(function(){
 	var wrapper = $('#wrapper');
 	var menu = $('#slide_menu');
 	var link = $('#slide_menu').find('a');
+	var facebook = $('#facebook');
+	var facebookLinks =$('#facebook_links');
+	var reset = $('#slide_menu').find('a.close_artists');
+
+	// Положение меню-слайдера
 	button.click(function(){
 		$(this).toggleClass('open');
 		menu.toggleClass('open');
@@ -123,6 +128,7 @@ $(function(){
 			wrapper.hide();
 		}
 	})
+	// Затемнение
 	wrapper.click(function(){
 		$(this).hide();
 		menu.removeClass('open');
@@ -133,6 +139,14 @@ $(function(){
 		menu.removeClass('open');
 		button.removeClass('open');
 	})
+	// Развертывание блока с ссылками на фейсбук
+	facebook.click(function(){
+		facebook.toggleClass('open');
+	})
+	// Скрытие табов по клику 
+	reset.click(function(){
+
+	})
 });
 
 /*   Анкорные ссылки на артистов    */
@@ -141,6 +155,8 @@ $(function(){
 	var tablist = $('#tablist');
 	var links = tablist.find('li');
 	var tabs = $('#tab-content');
+	var reset = $('.action_name');
+	var about = $('#slide_menu').find('.about_link');
 	person.click(function(){
 		tablist.css('display', 'block');
 		var index = $(this).index();
@@ -148,6 +164,14 @@ $(function(){
 		$('#tablist').find('li:eq(' + index + ')').addClass('active');
 		tabs.children().removeClass('active in');
 		tabs.children('div:eq(' + index + ')').addClass('active in');
+	})
+	reset.click(function(){
+		links.removeClass('active');
+		tabs.children().removeClass('active in');
+	})
+	about.click(function(){
+		links.removeClass('active');
+		tabs.children().removeClass('active in');
 	})
 });
 
