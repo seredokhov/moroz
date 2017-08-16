@@ -146,12 +146,13 @@ $(function(){
 });
 
 /*   Анкорные ссылки на артистов    */
-
 $(function(){
 	var person = $('#slide_menu').find('.artists').find('a');
-	var links = $('#tablist').find('li');
+	var tablist = $('#tablist');
+	var links = tablist.find('li');
 	var tabs = $('#tab-content');
 	person.click(function(){
+		tablist.css('display', 'block');
 		var index = $(this).index();
 		links.removeClass('active');
 		$('#tablist').find('li:eq(' + index + ')').addClass('active');

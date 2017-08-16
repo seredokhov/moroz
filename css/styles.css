@@ -72,17 +72,24 @@ header .container {
 	}
 	.lang_block span{
 		display: inline-block;
-		padding: 0 9px;
+		width: 31px;
 		height: 19px;
-		margin-top: 12px;
+		margin: 12px 3px 0 3px;
 		text-transform: uppercase;
 		color: #fff;
 		font-size: 15px;
 		text-align: center;
+		background: url('../images/flag.png');
+		opacity: 0.7;
+	}
+	.lang_block span.eng {
+		background-position: -41px 0;
+	}
+	.lang_block span.ch {
+		background-position: -82px 0;
 	}
 	.lang_block span.change {
-		background: #ff7835;
-		padding: 0 14px;
+		opacity: 1;
 	}
 	.social-likes {
 		padding: 10px 10px 9px 10px;
@@ -210,7 +217,7 @@ header .container {
 
 		}
 		header .line {
-			height: 7px;
+			height: 4px;
 			background: #ffffff;
 			width: 60%;
 			position: relative;
@@ -222,7 +229,7 @@ header .container {
 			border-top: 14px solid #ff7835;
 			position: absolute;
 			right: 0;
-			transform: translate(50%, -7px);
+			transform: translate(50%, -9px);
 		}
 		header .state {
 			border-bottom: 1px solid #ffffff;
@@ -340,12 +347,16 @@ header .container {
 			top: 1px;
 			background: url('../images/flag.png') no-repeat transparent;
 			cursor: pointer;
+			opacity: 0.7;
 		}
 		.lang_flags span.eng {
 			background-position: -41px 0;
 		}
 		.lang_flags span.ch {
 			background-position: -82px 0;
+		}
+		.lang_flags span.changed {
+			opacity: 1;
 		}
 		.mobile_header .social-likes {
 			padding: 0;
@@ -461,7 +472,7 @@ header .container {
 		.social_links .drop li {
 			display: block;
 			list-style: none;
-			padding: 13px 0;
+			padding: 5px 0;
 			font-size: 15px;
 			text-transform: uppercase;
 			color: #ffffff;
@@ -569,6 +580,10 @@ main > .container {
 	display: inline-block;
 	margin-left: 22px;
 	letter-spacing: 1px;
+	text-decoration: none;
+}
+.nav-links a:hover {
+	color: #000000;
 }
 /* Табы */
 ul.unstyled {
@@ -602,6 +617,7 @@ p.bio,
 	line-height: 30px;
 	font-weight: bold;
 	text-indent: 10px;
+	text-align: justify;
 }
 p.bio {
 	margin-top: -11px;
@@ -658,15 +674,11 @@ p.bio {
 }
 .song .state_bar {
 	margin: 0 -14px;
-	padding-top: 30px;
-	font-size: 12px;
+	padding-top: 4px;
+	font-size: 15px;
 	color: #0a0a0a;
 	font-family: 'PT Sans', sans-serif;
-	font-weight: bold;
 	text-transform: uppercase;
-}
-.song.changed .state_bar{
-	padding-top: 8px;
 }
 .song .state_bar > div {
 	display: none;
@@ -707,24 +719,24 @@ p.bio {
 	border-radius: 50%;
 	box-shadow: none;
 	box-sizing: content-box;
-	width: 60px;
-	height: 60px;
+	width: 24px;
+	height: 24px;
 	background: #ff7835;
-	border: 6px solid #ffffff;
+	border: 3px solid #ffffff;
 	-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 	box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 
 }
 .song.changed .play_button:before {
-	border: 13px solid transparent;
-	border-left: solid 16px #ffffff;
-	left: 25px;
+	border: 6px solid transparent;
+	border-left: solid 10px #ffffff;
+	left: 8px;
 }
 .play_button {
 	display: inline-block;
-	width: 72px;
-	height: 72px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	-webkit-box-shadow: 0px 1px 10px 2px rgba(240,240,240,1);
 	-moz-box-shadow: 0px 1px 10px 2px rgba(240,240,240,1);
@@ -738,10 +750,10 @@ p.bio {
 	display: inline-block;
 	position: absolute;
 	top: 50%;
-	left: 31px;
+	left: 12px;
 	transform: translateY(-50%);
-	border: 15px solid transparent;
-	border-left: solid 20px rgba(240,240,240,1);
+	border: 6px solid transparent;
+	border-left: solid 10px rgba(240,240,240,1);
 }
 .photo_item {
 	margin-bottom: 30px;
@@ -1116,6 +1128,7 @@ footer {
 	.photo_item > div {
 		display: inline-block;
 	}
+
 }
 
 @media (max-width: 768px) {
@@ -1147,10 +1160,19 @@ footer {
 	.owl-buttons > div.owl-next {
 		background-position: -122px 0 !important;
 	}
+	ul.unstyled {
+		display: none;
+	}
 }
 @media (max-width: 480px) {
 	header .time {
 		/*display: none;*/
+	}
+	.label {
+		display: none;
+	}
+	.like {
+		float: left;
 	}
 }
 @media (max-width: 400px) {
@@ -1172,7 +1194,12 @@ footer {
 }
 @media (max-width: 339px) {
 	.like {
-		position: relative;
-		top: 10px;
+		margin-right: 5px;
+		margin-left: 5px;
+		/*position: relative;
+		top: 10px;*/
 	}
 }
+
+
+
