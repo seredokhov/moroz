@@ -88,7 +88,7 @@ header .container {
 .lang_block span.ch {
 	background-position: -82px 0;
 }
-.lang_block span.change {
+.lang_block span.changed {
 	opacity: 1;
 }
 .social-likes {
@@ -453,7 +453,6 @@ header .social_links .vk:hover .drop{
 	padding-left: 35px;
 }
 /*     */
-
 .social_links .drop {
 	position: absolute;
 	top: 100%;
@@ -1015,10 +1014,6 @@ footer {
 	opacity: 1;
 }
 @media (max-width: 1200px) {
-	.lang_block {
-		width: 50%;
-		text-align: right;
-	}
 	.social-likes {
 		width: 50%;
 		text-align: left;
@@ -1056,6 +1051,12 @@ footer {
 	}
 	body {
 		margin-top: 0;
+	}
+	.label {
+		display: none;
+	}
+	.like {
+		float: left;
 	}
 }
 @media (max-width: 992px) {
@@ -1155,20 +1156,10 @@ footer {
 	header .time {
 		/*display: none;*/
 	}
-	.label {
-		display: none;
-	}
-	.like {
-		float: left;
-	}
 }
 @media (max-width: 400px) {
 	header .bar {
 		display: none;
-	}
-	.lang_block {
-		width: 100%;
-		text-align: center;
 	}
 	.social-likes {
 		padding: 0;
@@ -1183,7 +1174,12 @@ footer {
 	.like {
 		margin-right: 5px;
 		margin-left: 5px;
-		/*position: relative;
-		top: 10px;*/
 	}
+}
+@media (min-width: 1200px) {
+	.lang_flags {
+		float: left;
+		padding: 11px 0 0 0;
+	}
+
 }
