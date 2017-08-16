@@ -65,453 +65,449 @@ header {
 header .container {
 	padding: 0;
 }
-	.lang_block {
-		height: 41px;
-		float: left;
-		cursor: pointer;
-	}
-	.lang_block span{
-		display: inline-block;
-		width: 31px;
-		height: 19px;
-		margin: 12px 3px 0 3px;
-		text-transform: uppercase;
-		color: #fff;
-		font-size: 15px;
-		text-align: center;
-		background: url('../images/flag.png');
-		opacity: 0.7;
-	}
-	.lang_block span.eng {
-		background-position: -41px 0;
-	}
-	.lang_block span.ch {
-		background-position: -82px 0;
-	}
-	.lang_block span.change {
-		opacity: 1;
-	}
-	.social-likes {
-		padding: 10px 10px 9px 10px;
+.lang_block {
+	height: 41px;
+	float: left;
+	cursor: pointer;
+}
+.lang_block span{
+	display: inline-block;
+	width: 31px;
+	height: 19px;
+	margin: 12px 3px 0 3px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 15px;
+	text-align: center;
+	background: url('../images/flag.png');
+	opacity: 0.7;
+}
+.lang_block span.eng {
+	background-position: -41px 0;
+}
+.lang_block span.ch {
+	background-position: -82px 0;
+}
+.lang_block span.change {
+	opacity: 1;
+}
+.social-likes {
+	padding: 10px 10px 9px 10px;
+	margin: 0;
+	display: block;
+	float: left;
+	margin-left: 31px;
+	margin-right: 32px;
+}
+	.social-likes__widget {
 		margin: 0;
-		display: block;
-		float: left;
-		margin-left: 31px;
-		margin-right: 32px;
 	}
-		.social-likes__widget {
-			margin: 0;
-		}
-	.header_media {
-		min-height: 40px;
-		float: left;
-		line-height: 40px;
-	}
-	.header_media > span,
-	.header_media > div {
-		display: inline-block;
-		vertical-align: middle;
-		position: relative;
-		top: -1.5px;
-	}
-		header .tumbler {
-			width: 32px;
-			height: 32px;
-			border-radius: 50%;
-			background: #ffffff;
-			border: 1px solid #ffffff;
-			box-shadow: inset 0px 0px 0px 3px #000000;
-			position: relative;
-			margin: 1px 2px 0 3px;
-			cursor: pointer;
-		}
-		header .stop {
-			background: #ff7835;
-		}
-		header .play:before {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 50%;
-			left: 13px;
-			transform: translateY(-50%);
-			line-height: normal;
-			border: 6px solid transparent;
-			border-left-color: #000000;
-		}
-		header .stop:before {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 50%;
-			left: 11px;
-			transform: translateY(-50%);
-			line-height: normal;
-			border: 4px solid #000000;
-		}
-		header .prev,
-		header .next {
-			width: 26px;
-			height: 40px;
-			overflow: hidden;
-			cursor: pointer;
-		}
-		header .prev:before {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 50%;
-			left: -5px;
-			transform: translateY(-50%);
-			border: 6px solid transparent;
-			border-right: 9px solid #ffffff;
-		}
-		header .prev:after {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 50%;
-			right: 0;
-			transform: translateY( -50%);
-			border: 10px solid transparent;
-			border-right: 15px solid #ffffff;
-		}
-		header .next:before {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 50%;
-			left: 0;
-			transform: translateY( -50%);
-			border: 10px solid transparent;
-			border-left: 15px solid #ffffff;
-		}
-		header .next:after {
-			content: "";
-			display: inline-block;
-			position: absolute;
-			top: 50%;
-			right: -5px;
-			transform: translateY(-50%);
-			border: 6px solid transparent;
-			border-left: 9px solid #ffffff;
-		}
-		header .state_block {
-			height: 40px;
-			line-height: normal;
-			padding-top: 5px;
-			margin-left: 8px;
-		}
-		header .bar {
-			width: 280px;
-			float: left;
-		}
-		header .song_name {
-			color: #ffffff;
-			font-size: 14px;
-			display: block;
-			margin-bottom: 7px;
-			font-family: 'Proxima Nova Light';
-			white-space: nowrap;
-			overflow: hidden;
+.header_media {
+	min-height: 40px;
+	float: left;
+	line-height: 40px;
+}
+.header_media > span,
+.header_media > div {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -1.5px;
+}
+header .tumbler {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	background: #ffffff;
+	border: 1px solid #ffffff;
+	box-shadow: inset 0px 0px 0px 3px #000000;
+	position: relative;
+	margin: 1px 2px 0 3px;
+	cursor: pointer;
+}
+header .stop {
+	background: #ff7835;
+}
+header .play:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 13px;
+	transform: translateY(-50%);
+	line-height: normal;
+	border: 6px solid transparent;
+	border-left-color: #000000;
+}
+header .stop:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 11px;
+	transform: translateY(-50%);
+	line-height: normal;
+	border: 4px solid #000000;
+}
+header .prev,
+header .next {
+	width: 26px;
+	height: 40px;
+	overflow: hidden;
+	cursor: pointer;
+}
+header .prev:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: -5px;
+	transform: translateY(-50%);
+	border: 6px solid transparent;
+	border-right: 9px solid #ffffff;
+}
+header .prev:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY( -50%);
+	border: 10px solid transparent;
+	border-right: 15px solid #ffffff;
+}
+header .next:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY( -50%);
+	border: 10px solid transparent;
+	border-left: 15px solid #ffffff;
+}
+header .next:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	transform: translateY(-50%);
+	border: 6px solid transparent;
+	border-left: 9px solid #ffffff;
+}
+header .state_block {
+	height: 40px;
+	line-height: normal;
+	padding-top: 5px;
+	margin-left: 8px;
+}
+header .bar {
+	width: 280px;
+	float: left;
+}
+header .song_name {
+	color: #ffffff;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 7px;
+	font-family: 'Proxima Nova Light';
+	white-space: nowrap;
+	overflow: hidden;
 
-		}
-		header .line {
-			height: 4px;
-			background: #ffffff;
-			width: 60%;
-			position: relative;
-		}
-		header .line:after {
-			content: "";
-			display: inline-block;
-			border: 9px solid transparent;
-			border-top: 14px solid #ff7835;
-			position: absolute;
-			right: 0;
-			transform: translate(50%, -9px);
-		}
-		header .state {
-			border-bottom: 1px solid #ffffff;
-			cursor: pointer;
-		}
-		header .time {
-			float: left;
-			font-size: 17px;
-			color: #ffffff;
-			padding-top: 9px;
-			margin-left: 6px;
-		}
-		.social_links {
-			float: right;
-			min-height: 38px;
-			padding-top: 8px;
-			margin: 0 -6px;
-			cursor: pointer;
-		}
-		header .social_links > a,
-		header .social_links > div {
-			display: inline-block;
-			width: 38px;
-			margin: 0 4px;
-			height: 30px;
-			background-image: url("../images/sprite.png");
-			background-repeat: no-repeat;
-			position: relative;
-		}
-		header .social_links .itunes {
-			background-position: 0px -32px;
-		}
-		header .social_links .google_play {
-			background-position: -45px -31px;
-		}
-		header .social_links .facebook {
-			background-position: -95px -31px;
-		}
-		header .social_links .vk {
-			background-position: -145px -31px;
-		}
-		header .social_links .instagram {
-			background-position: -195px -31px;
-		}
-		header .social_links .spotify {
-			background-position: -245px -31px;
-		}
-		header .social_links .youtube {
-			background-position: -295px -31px;
-		}
+}
+header .line {
+	height: 4px;
+	background: #ffffff;
+	width: 60%;
+	position: relative;
+}
+header .line:after {
+	content: "";
+	display: inline-block;
+	border: 9px solid transparent;
+	border-top: 14px solid #ff7835;
+	position: absolute;
+	right: 0;
+	transform: translate(50%, -9px);
+}
+header .state {
+	border-bottom: 1px solid #ffffff;
+	cursor: pointer;
+}
+header .time {
+	float: left;
+	font-size: 17px;
+	color: #ffffff;
+	padding-top: 9px;
+	margin-left: 6px;
+}
+.social_links {
+	float: right;
+	min-height: 38px;
+	padding-top: 8px;
+	margin: 0 -6px;
+	cursor: pointer;
+}
+header .social_links > a,
+header .social_links > div {
+	display: inline-block;
+	width: 38px;
+	margin: 0 4px;
+	height: 30px;
+	background-image: url("../images/sprite.png");
+	background-repeat: no-repeat;
+	position: relative;
+}
+header .social_links .itunes {
+	background-position: 0px -32px;
+}
+header .social_links .google_play {
+	background-position: -45px -31px;
+}
+header .social_links .facebook {
+	background-position: -95px -31px;
+}
+header .social_links .vk {
+	background-position: -145px -31px;
+}
+header .social_links .instagram {
+	background-position: -195px -31px;
+}
+header .social_links .spotify {
+	background-position: -245px -31px;
+}
+header .social_links .youtube {
+	background-position: -295px -31px;
+}
 
-		/*   Выподающее меню и социальные иконки на больших экранах   */
-		header .social_links .itunes:hover {
-			background-position: 0px 0px;
-		}
-		header .social_links .google_play:hover {
-			background-position: -45px 1px;
-		}
-		header .social_links .facebook:hover {
-			background-position: -95px 1px;
-		}
-		header .social_links .vk:hover {
-			background-position: -145px 1px;
-		}
-		header .social_links .instagram:hover {
-			background-position: -195px 1px;
-		}
-		header .social_links .spotify:hover {
-			background-position: -245px 1px;
-		}
-		header .social_links .youtube:hover {
-			background-position: -295px 1px;
-		}
+/*   Выподающее меню и социальные иконки на больших экранах   */
+header .social_links .itunes:hover {
+	background-position: 0px 0px;
+}
+header .social_links .google_play:hover {
+	background-position: -45px 1px;
+}
+header .social_links .facebook:hover {
+	background-position: -95px 1px;
+}
+header .social_links .vk:hover {
+	background-position: -145px 1px;
+}
+header .social_links .instagram:hover {
+	background-position: -195px 1px;
+}
+header .social_links .spotify:hover {
+	background-position: -245px 1px;
+}
+header .social_links .youtube:hover {
+	background-position: -295px 1px;
+}
 
-		/*  Выпадающие меню   */
-		header .social_links .facebook:hover .drop {
-			display: block;
-		}
-		header .social_links .vk:hover .drop{
-			display: block;
-		}
-	/*----*/
+/*  Выпадающие меню   */
+header .social_links .facebook:hover .drop {
+	display: block;
+}
+header .social_links .vk:hover .drop{
+	display: block;
+}
+/*   Шапка мобильного меню  */
+.mobile_header {
+	position: relative;
+}
+.label {
+	font-size: 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+	float: left;
+}
+.like,
+.hamb,
+.lang_flags {
+	float: right;
+}
+.lang_flags {
+	padding: 10px 5px;
+}
+.like {
+	height: 21px;
+	overflow: hidden;
+	margin: 9px 10px 0 10px;
+}
+.lang_flags span {
+	display: inline-block;
+	width: 31px;
+	height: 19px;
+	margin:  0 3px;
+	position: relative;
+	top: 1px;
+	background: url('../images/flag.png') no-repeat transparent;
+	cursor: pointer;
+	opacity: 0.7;
+}
+.lang_flags span.eng {
+	background-position: -41px 0;
+}
+.lang_flags span.ch {
+	background-position: -82px 0;
+}
+.lang_flags span.changed {
+	opacity: 1;
+}
+.mobile_header .social-likes {
+	padding: 0;
+	width: auto;
+}
 
-		/*   Шапка мобильного меню  */
-		.mobile_header {
-			position: relative;
-		}
-		.label {
-			font-size: 20px;
-			text-transform: uppercase;
-			display: inline-block;
-			text-align: left;
-			padding: 10px;
-			float: left;
-		}
-		.like,
-		.hamb,
-		.lang_flags {
-			float: right;
-		}
-		.lang_flags {
-			padding: 10px 5px;
-		}
-		.like {
-			height: 21px;
-			overflow: hidden;
-			margin: 9px 10px 0 10px;
-		}
-		.lang_flags span {
-			display: inline-block;
-			width: 31px;
-			height: 19px;
-			margin:  0 3px;
-			position: relative;
-			top: 1px;
-			background: url('../images/flag.png') no-repeat transparent;
-			cursor: pointer;
-			opacity: 0.7;
-		}
-		.lang_flags span.eng {
-			background-position: -41px 0;
-		}
-		.lang_flags span.ch {
-			background-position: -82px 0;
-		}
-		.lang_flags span.changed {
-			opacity: 1;
-		}
-		.mobile_header .social-likes {
-			padding: 0;
-			width: auto;
-		}
+/*  Иконка гамбургер  */
 
-		/*  Иконка гамбургер  */
+.hamb {
+	width: 40px;
+	margin-top: 10px;
+	height: 20px;
+	position: relative;
+	z-index: 999;
+}
+.hamb span,
+.hamb span:before,
+.hamb span:after {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -1px;
+	margin-left: -13px;
+	display: inline-block;
+	width: 26px;
+	height: 2px;
+	background: #fff;
+}
+.hamb span:before {
+	content: "";
+	margin-top: -8px;
+	transition: all 0.2s;
+}
+.hamb span:after {
+	content: "";
+	margin-top: 6px;
+	transition: all 0.2s;
+}
 
-		.hamb {
-			width: 40px;
-			margin-top: 10px;
-			height: 20px;
-			position: relative;
-			z-index: 999;
-		}
-		.hamb span,
-		.hamb span:before,
-		.hamb span:after {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			margin-top: -1px;
-			margin-left: -13px;
-			display: inline-block;
-			width: 26px;
-			height: 2px;
-			background: #fff;
-		}
-		.hamb span:before {
-			content: "";
-			margin-top: -8px;
-			transition: all 0.2s;
-		}
-		.hamb span:after {
-			content: "";
-			margin-top: 6px;
-			transition: all 0.2s;
-		}
+/*  Открытое положение  */
+.hamb.open span {
+	background-color: transparent;
+}
+.hamb.open span:before {
+	transform: rotate(45deg);
+	margin-top: 0;
+}
+.hamb.open span:after {
+	transform: rotate(-45deg);
+	margin-top: 0;
+}
 
-		/*  Открытое положение  */
-		.hamb.open span {
-			background-color: transparent;
-		}
-		.hamb.open span:before {
-			transform: rotate(45deg);
-			margin-top: 0;
-		}
-		.hamb.open span:after {
-			transform: rotate(-45deg);
-			margin-top: 0;
-		}
+/*  Выдвигающееся меню  */
+#wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0, 0.7);
+	z-index: 9;
+	display: none;
+}
+#slide_menu {
+	position: absolute;
+	top: 0;			
+	right: 0;
+	width: 0;
+	white-space: nowrap;
+	min-height: 500px;
+	background: rgba(0,0,0, 0.9);
+	overflow: hidden;
+	transition: all 0.2s;
+	padding-top: 40px;
+	z-index: 10;
+}
+#slide_menu.open {
+	width: 300px;
+}
+#slide_menu a {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	color: #fff;
+	font-family: 'Pt Sans';
+	font-size: 18px;
+	text-decoration: none;
+	transition: all 0.1s;
+	padding-left: 20px;
+}
+#slide_menu a:hover {
+	background: #ffffff;
+	color: #000000;
+}
+#slide_menu .artists a{
+	padding-left: 35px;
+}
+/*     */
 
-		/*  Выдвигающееся меню  */
-		#wrapper {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background: rgba(0,0,0, 0.7);
-			z-index: 9;
-			display: none;
-		}
-		#slide_menu {
-			position: absolute;
-			top: 0;			
-			right: 0;
-			width: 0;
-			white-space: nowrap;
-			min-height: 500px;
-			background: rgba(0,0,0, 0.9);
-			overflow: hidden;
-			transition: all 0.2s;
-			padding-top: 40px;
-			z-index: 10;
-		}
-		#slide_menu.open {
-			width: 300px;
-		}
-		#slide_menu a {
-			display: block;
-			width: 100%;
-			padding: 10px;
-			color: #fff;
-			font-family: 'Pt Sans';
-			font-size: 18px;
-			text-decoration: none;
-			transition: all 0.1s;
-			padding-left: 20px;
-		}
-		#slide_menu a:hover {
-			background: #ffffff;
-			color: #000000;
-		}
-		#slide_menu .artists a{
-			padding-left: 35px;
-		}
-
-		/*     */
-
-		.social_links .drop {
-			position: absolute;
-			top: 100%;
-			left: 0;
-			min-width: 200px;
-			margin: 0;
-			padding: 0;
-			min-height: 100px;
-			padding: 10px;
-			display: none;
-			z-index: 9999;
-			background: rgba(0,0,0,0.5);
-		}
-		.social_links .drop li {
-			display: block;
-			list-style: none;
-			padding: 5px 0;
-			font-size: 15px;
-			text-transform: uppercase;
-			color: #ffffff;
-			position: relative;
-		}
-		.social_links .drop li a {
-			font-size: 15px;
-			text-transform: uppercase;
-			color: #ffffff;
-			padding-left: 30px;
-			font-family: 'Brassie Regular';
-			font-weight: lighter;
-			letter-spacing: 0.7px;
-		}
-		.social_links .drop li:before {
-			content: "";
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			background-image: url("../images/sprite.png");
-			background-repeat: no-repeat;
-			background-size: 200px;
-			position: relative;
-			top: 5px;
-			margin-right: 15px;
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		.social_links .facebook .drop li:before {
-			background-position: -59px 2px;
-		}
-		.social_links .vk .drop li:before {
-			background-position: -89px 2px;
-			left: -2px;
-		}
-
+.social_links .drop {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 200px;
+	margin: 0;
+	padding: 0;
+	min-height: 100px;
+	padding: 10px;
+	display: none;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+}
+.social_links .drop li {
+	display: block;
+	list-style: none;
+	padding: 5px 0;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	position: relative;
+}
+.social_links .drop li a {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-left: 30px;
+	font-family: 'Brassie Regular';
+	font-weight: lighter;
+	letter-spacing: 0.7px;
+}
+.social_links .drop li:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("../images/sprite.png");
+	background-repeat: no-repeat;
+	background-size: 200px;
+	position: relative;
+	top: 5px;
+	margin-right: 15px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.social_links .facebook .drop li:before {
+	background-position: -59px 2px;
+}
+.social_links .vk .drop li:before {
+	background-position: -89px 2px;
+	left: -2px;
+}
 /*        Слайдер      */
 .carousel {
 	background: #cb5154;
@@ -550,7 +546,6 @@ header .container {
 	bottom: 230px;
 	right: 10px;
 }
-
 /*   Контент  */
 main {
 	font-family: 'PT Sans', sans-serif;
@@ -629,7 +624,6 @@ p.bio {
 .about_info ul li {
 	text-indent: 0;
 }
-
 /*----*/
 .about_header,
 .music_header,
@@ -727,7 +721,6 @@ p.bio {
 	-webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 	-moz-box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
 	box-shadow: 0px 0px 0px 1px rgba(0,0,0,1);
-
 }
 .song.changed .play_button:before {
 	border: 6px solid transparent;
@@ -835,7 +828,6 @@ p.bio {
 	width: 100%;
 	height: 100%;
 }
-
 #contacts {
 	margin-top: 0px;
 	overflow: hidden;
@@ -885,7 +877,6 @@ p.bio {
 	margin-right: 15px;
 	float: left;
 }
-
 .contacts_info .mail:before {
 	width: 25px;
 	height: 16px;
@@ -964,9 +955,7 @@ footer {
 	padding: 18px;
 	font-weight: bold;
 }
-
 /*  Модальное окно  */
-
 .popup {
 	position: fixed;
 	top:0;
@@ -1025,7 +1014,6 @@ footer {
 #totop:hover {
 	opacity: 1;
 }
-
 @media (max-width: 1200px) {
 	.lang_block {
 		width: 50%;
@@ -1129,9 +1117,7 @@ footer {
 	.photo_item > div {
 		display: inline-block;
 	}
-
 }
-
 @media (max-width: 768px) {
 	.orange_block {
 		text-align: center;
@@ -1201,6 +1187,3 @@ footer {
 		top: 10px;*/
 	}
 }
-
-
-
