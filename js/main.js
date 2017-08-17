@@ -1,6 +1,7 @@
 // ОВЛ карусель
 $(function() {
-	$("#owl-demo").owlCarousel({	
+	$("#owl-demo").owlCarousel({
+		autoPlay: 7000,
 		navigation : true, // Show next and prev buttons
 		navigationText: ["",""],
 		slideSpeed : 300,

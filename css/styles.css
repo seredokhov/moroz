@@ -283,29 +283,29 @@ header .social_links .youtube {
 }
 
 /*   Выподающее меню и социальные иконки на больших экранах   */
-/*
+
 header .social_links .itunes:hover {
-	background-position: 0px 0px;
+	background-position: 0px -22px;
 }
 header .social_links .google_play:hover {
-	background-position: -45px 1px;
+	background-position: -35px -22px;
 }
 header .social_links .facebook:hover {
-	background-position: -95px 1px;
+	background-position: -73px -22px;
 }
 header .social_links .vk:hover {
-	background-position: -145px 1px;
+	background-position: -110px -22px;
 }
 header .social_links .instagram:hover {
-	background-position: -195px 1px;
+	background-position: -148px -22px;
 }
 header .social_links .spotify:hover {
-	background-position: -245px 1px;
+	background-position: -185px -22px;
 }
 header .social_links .youtube:hover {
-	background-position: -295px 1px;
+	background-position: -223px -22px;
 }
-*/
+
 /*  Выпадающие меню   */
 header .social_links .facebook:hover .drop {
 	display: block;
@@ -846,7 +846,6 @@ p.bio {
 	font-family: 'PT Sans', sans-serif;
 	text-transform: none;
 	margin-top: -9px;
-	overflow: hidden;
 }
 .contacts_info .mail:before,
 .contacts_info .phone:before,
@@ -909,6 +908,7 @@ p.bio {
 }
 .social_icons {
 	margin: 14px 12px;
+	margin-right: 54px;
 }
 .social_icons .itunes {
 	background-position: 0px -55px;
@@ -976,7 +976,7 @@ footer {
 	height: 40px;
 	position: absolute;
 	right: 30px;
-	top: 30px;
+	top: 45px;
 	z-index: 9999;
 	cursor: pointer;
 	padding: 0px;
@@ -1045,6 +1045,10 @@ footer {
 	.like {
 		float: left;
 	}
+	.social_icons {
+		margin: 14px 12px;
+		margin-right: 50px;
+	}
 }
 @media (max-width: 992px) {
 	.orange_block,
@@ -1106,6 +1110,9 @@ footer {
 	.photo_item > div {
 		display: inline-block;
 	}
+	.social_icons {
+		text-align: center;
+	}
 }
 @media (max-width: 768px) {
 	.orange_block {
@@ -1152,6 +1159,9 @@ footer {
 	}
 	ul.unstyled li.active a {
 		color: #ffffff;
+	}
+	.social_icons {
+		margin: 14px 12px;
 	}
 }
 @media (max-width: 480px) {
