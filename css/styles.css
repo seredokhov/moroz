@@ -448,12 +448,6 @@ header .social_links .vk:hover .drop{
 	padding-left: 20px;
 	cursor: pointer;
 }
-/*
-#slide_menu a:hover,
-#slide_menu #facebook:hover {
-	background: #ffffff;
-	color: #000000 !important;
-}*/
 #slide_menu .artists a,
 #facebook_links a{
 	padding-left: 35px;
@@ -567,6 +561,7 @@ header .social_links .vk:hover .drop{
 /*   Контент  */
 main {
 	font-family: 'PT Sans', sans-serif;
+	overflow: hidden;
 }
 .orange_block {
 	min-height: 65px;
